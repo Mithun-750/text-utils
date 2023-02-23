@@ -1,19 +1,85 @@
-*{
+* {
   padding: 0px;
   margin: 0px;
 }
 
-.navbar ul{
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px;
-  padding-right: 20px;
+nav {
+  text-align: center;
+  padding: 20px;
   background-color: black;
   border-bottom: 2px solid azure;
-
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-.navbar ul li{
-  list-style: none;
-  padding: 5px;
+nav h1{
   color: azure;
+  font-size: 35px;
+  font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+
+nav h1:hover{
+  transform: scale(1.1) rotate(1deg);
+}
+
+
+.btnContainer, 
+.txtContainer{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.container {
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.txtCenter {
+  text-align: center;
+}
+
+.preview {
+  box-sizing: border-box;
+}
+
+#inputArea {
+  width: calc(100vw - 10px);
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid black;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  padding: 15px;
+}
+
+#inputArea:hover{
+  border: 2px double rgb(37, 21, 21);
+  box-shadow: 5px 5px 2px black;
+  transform: translate(-5px);
+}
+
+.a_part{
+  width: 300px;
+  height: 250px;
+  overflow: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 3px dotted rgb(37, 21, 21);
+  border-radius: 10px;
+}
+
+.a_part h1,
+.txtContainer h2{
+  border-bottom: 2px solid rgb(46 54 51);
+  border-radius: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5px;
+}
+
+.txtContainer h2{
+  padding-bottom: 10px;
 }

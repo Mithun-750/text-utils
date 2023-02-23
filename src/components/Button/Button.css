@@ -1,0 +1,13 @@
+.button{
+    background-color: blue;
+    color: azure;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    margin: 10px;
+}
+
+.button:hover{
+    background-color: rgb(50, 75, 75);
+}
