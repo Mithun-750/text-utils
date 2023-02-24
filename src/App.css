@@ -3,6 +3,10 @@
   margin: 0px;
 }
 
+body {
+  background-color: rgb(0 0 0 / 64%);
+}
+
 nav {
   text-align: center;
   padding: 20px;
@@ -23,6 +27,12 @@ nav h1:hover{
   transform: scale(1.1) rotate(1deg);
 }
 
+.container {
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 .btnContainer, 
 .txtContainer{
@@ -31,24 +41,16 @@ nav h1:hover{
   flex-direction: column;
 }
 
-.container {
-  margin: 50px;
-  display: flex;
-  justify-content: space-around;
-}
 
 .txtCenter {
   text-align: center;
 }
 
-.preview {
-  box-sizing: border-box;
-}
 
 #inputArea {
   width: calc(100vw - 10px);
   text-align: center;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 2px solid black;
   transition: all 0.3s ease-in-out;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -65,11 +67,17 @@ nav h1:hover{
 .a_part{
   width: 300px;
   height: 250px;
-  overflow: auto;
+  overflow: hidden;
   padding: 10px;
   box-sizing: border-box;
   border: 3px dotted rgb(37, 21, 21);
   border-radius: 10px;
+  background-color: azure;
+  margin-bottom: 20px;
+}
+.preview {
+  box-sizing: border-box;
+  overflow: auto;
 }
 
 .a_part h1,
