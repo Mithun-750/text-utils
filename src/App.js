@@ -17,8 +17,9 @@ function App() {
     setext('');
     settyspeed((0).toFixed(2))
   };
+  
   const handleChange = (event) => {
-    setext(event.target.value)
+    setext((event.target.value).replace(/ {2,}$/g, ' '))
   }
   const StartCount = () =>{
     settime1(Date.now());
