@@ -1,4 +1,4 @@
-.button{
+#button{
     background-color: blue;
     color: azure;
     padding: 10px;
@@ -8,6 +8,6 @@
     margin: 10px;
 }
 
-.button:hover{
+#button:hover{
     background-color: rgb(50, 75, 75);
 }

@@ -11,7 +11,7 @@ export default function Button(props) {
         borderRadius: props.borderRadius,
     };
     return (
-        <button style={myStyle} className='button' onClick={props.onClick}>
+        <button style={myStyle} id='button' className={props.className} onClick={props.onClick}>
             {props.Text}
         </button>
     )
