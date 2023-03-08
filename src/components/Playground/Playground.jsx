@@ -60,7 +60,7 @@ export default function Playground(props) {
           </div>
           <div className={`txtCenter a_part txtContainer a_part_${props.crmode}`}>
             <h2>Your text summary</h2>
-            <h3>{text.split(" ").length - 1} words</h3>
+            <h3>{text.split(/\s+/).length - 1} words</h3>
             <h3>{text.length} characters</h3>
             <h3>{(0.008 * (text.length / 5)).toFixed(2)} minutes to read your text</h3>
             <h3>Speed - {tyspeed} wpm</h3>
