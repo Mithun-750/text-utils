@@ -1,0 +1,104 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    flex-wrap: wrap;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#logo {
+    color: azure;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+#logo:hover {
+    transform: scale(1.1) rotate(1deg);
+}
+
+.navbar-menu {
+    display: flex;
+    color: white;
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-item {
+    list-style: none;
+    transition: all 0.2s ease-out;
+}
+
+.navbar-item:hover{
+    transform: scale(1.1);
+}
+
+.navbar-item a {
+    text-decoration-line: none;
+    color: azure;
+}
+
+.navbar-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: azure;
+}
+
+@media (max-width: 768px) {
+    #logo {
+        font-size: 24px;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-menu {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        list-style: none;
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-out;
+        align-items: center;
+    }
+
+    .navbar-menu.active {
+        height: 175px;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 15px;
+        transition: height 0.3s ease-in;
+    }
+
+    .navbar-item a{
+        margin: 0.5rem 0;
+        text-align: center;
+        padding: 7px 73px;
+        background-color: #2e2222;
+        width: 25%;
+        border-radius: 10px;
+    }
+
+    .navbar-link {
+        display: block;
+        padding: 0.5rem;
+        color: azure;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+
+    .navbar-link:hover {
+        background-color: #555;
+    }
+}

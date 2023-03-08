@@ -1,0 +1,22 @@
+.txt-center{
+    text-align: center;
+}
+
+.abt_con{
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 20px;
+    padding: 20px 30px 30px 50px;
+    min-width: 300px;
+    box-sizing: border-box;
+    max-width: 98vw;
+}
+
+
+.abt_con h1{
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgb(45 60 109);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
