@@ -4,12 +4,6 @@ import About from './components/About/About';
 import Navbar from './components/Navbar/Navbar';
 import Playground from './components/Playground/Playground';
 
-// import { Routes, Route } from 'react-router-dom';
-
-// import {
-//   BrowserRouter as Router
-// } from "react-router-dom";
-
 
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
